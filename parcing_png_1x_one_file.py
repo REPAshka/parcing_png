@@ -161,7 +161,7 @@ if __name__ == "__main__":
     try:
         gc = gs.service_account(filename='../service_account.json')
         sh = gc.open_by_url('https://docs.google.com/spreadsheets/d/1OlLCCk2KT7pdvEHi5zoDBL8I5_DPXR8q9M5SZtoO-no/edit#gid=348316738')
-        worksheet = sh.worksheet('Copy of games_to_parce')
+        worksheet = sh.worksheet('games_to_parce')
 
         df_to_spreadsheet = get_final_df(worksheet=worksheet, save_fig_locally=False)
 

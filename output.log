@@ -23,3 +23,33 @@ Traceback (most recent call last):
          └ <module 'io' (frozen)>
 
 FileNotFoundError: [Errno 2] No such file or directory: 'service_account.json'
+2024-01-24 11:35:47 | __main__:<module>:171 - HUSTON, WE HAVE AN ERROR: {e}
+Traceback (most recent call last):
+
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\gspread\spreadsheet.py", line 341, in worksheet
+    item = finditem(
+           └ <function finditem at 0x000002562DA79620>
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\gspread\utils.py", line 149, in finditem
+    return next(item for item in seq if func(item))
+                                 │      └ <function Spreadsheet.worksheet.<locals>.<lambda> at 0x000002562D7C54E0>
+                                 └ [{'properties': {'sheetId': 348316738, 'title': 'games_to_parce', 'index': 0, 'sheetType': 'GRID', 'gridProperties': {'rowCou...
+
+StopIteration
+
+
+During handling of the above exception, another exception occurred:
+
+
+Traceback (most recent call last):
+
+> File "C:\Users\khaliullin.t\Downloads\Telegram Desktop\work\parcing_png\parcing_png_1x_one_file.py", line 164, in <module>
+    worksheet = sh.worksheet('Copy of games_to_parce')
+                │  └ <function Spreadsheet.worksheet at 0x000002562DAA9120>
+                └ <Spreadsheet 'SuperWheel games' id:1OlLCCk2KT7pdvEHi5zoDBL8I5_DPXR8q9M5SZtoO-no>
+
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\gspread\spreadsheet.py", line 347, in worksheet
+    raise WorksheetNotFound(title)
+          │                 └ 'Copy of games_to_parce'
+          └ <class 'gspread.exceptions.WorksheetNotFound'>
+
+gspread.exceptions.WorksheetNotFound: Copy of games_to_parce
