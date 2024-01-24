@@ -53,3 +53,7 @@ Traceback (most recent call last):
           └ <class 'gspread.exceptions.WorksheetNotFound'>
 
 gspread.exceptions.WorksheetNotFound: Copy of games_to_parce
+2024-01-24 11:37:00 | __main__:get_top_games_img_urls:47 - Я НАШЕЛ И ЗАКРЫЛ ПЕРВЫЙ ПОПАП
+2024-01-24 11:37:07 | __main__:get_img_urls:86 - 116
+2024-01-24 11:38:02 | __main__:get_final_df:131 - ВСЕ КАРТИНКИ УСПЕШНО ВЫГРУЖЕНЫ!
+2024-01-24 11:38:02 | __main__:get_final_df:154 - Таблица к записи в спредшит файл готова!

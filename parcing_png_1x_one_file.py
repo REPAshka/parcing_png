@@ -36,7 +36,7 @@ def get_top_games_img_urls(url: str, need_to_change_iframes: bool=False, need_to
         time.sleep(5)
 
         # ищем и закрываем первый попап
-        popup_locator  = (By.CLASS_NAME, 'body--has-modal body--blurred')
+        popup_locator = (By.CLASS_NAME, 'body--has-modal body--blurred')
         WebDriverWait(driver, 10).until(EC.presence_of_element_located(popup_locator))
         logger.info('Я НАШЕЛ ТЕЛО АЙФРЕЙМА ПЕРВОГО ПОПАПА')
 
