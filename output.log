@@ -1,0 +1,25 @@
+2024-01-24 11:28:59 | __main__:<module>:171 - HUSTON, WE HAVE AN ERROR: {e}
+Traceback (most recent call last):
+
+> File "C:\Users\khaliullin.t\Downloads\Telegram Desktop\work\parcing_png\parcing_png_1x_one_file.py", line 162, in <module>
+    gc = gs.service_account(filename='service_account.json')
+         │  └ <function service_account at 0x00000202AC44B240>
+         └ <module 'gspread' from 'C:\\Users\\khaliullin.t\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages\\gspread\\__...
+
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\gspread\auth.py", line 342, in service_account
+    creds = ServiceAccountCredentials.from_service_account_file(filename, scopes=scopes)
+            │                         │                         │                └ ['https://www.googleapis.com/auth/spreadsheets', 'https://www.googleapis.com/auth/drive']
+            │                         │                         └ 'service_account.json'
+            │                         └ <classmethod(<function Credentials.from_service_account_file at 0x00000202AC069D00>)>
+            └ <class 'google.oauth2.service_account.Credentials'>
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\oauth2\service_account.py", line 257, in from_service_account_file
+    info, signer = _service_account_info.from_filename(
+                   │                     └ <function from_filename at 0x00000202ABDEF9C0>
+                   └ <module 'google.auth._service_account_info' from 'C:\\Users\\khaliullin.t\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\...
+  File "C:\Users\khaliullin.t\AppData\Local\Programs\Python\Python312\Lib\site-packages\google\auth\_service_account_info.py", line 78, in from_filename
+    with io.open(filename, "r", encoding="utf-8") as json_file:
+         │  │    └ 'service_account.json'
+         │  └ <built-in function open>
+         └ <module 'io' (frozen)>
+
+FileNotFoundError: [Errno 2] No such file or directory: 'service_account.json'
